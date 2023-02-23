@@ -1,4 +1,3 @@
-import React from 'react';
 import {View, Text, StyleSheet, Image, Button, Alert} from 'react-native';
 
 export default function Register () {
@@ -11,14 +10,13 @@ export default function Register () {
           <Text>Just dey play</Text>
         </View>
       </View>
-
       <View>
         <Button
-          title="Press me"
+          title="Sign up with the Access Code"
           onPress={() => Alert.alert ('Simple Button pressed')}
         />
         <Button
-          title="Press me"
+          title="I already have an account"
           onPress={() => Alert.alert ('Simple Button pressed')}
         />
       </View>
@@ -34,8 +32,5 @@ const styles = StyleSheet.create ({
   logo: {
     width: 100,
     height: 'auto',
-  },
-  text: {
-    color: '#fff',
   },
 });
