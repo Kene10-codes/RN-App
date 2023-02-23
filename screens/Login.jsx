@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
 
-import 'react-native';
 export default function Login () {
   const [text, onChangeText] = useState ('Adams234');
   return (

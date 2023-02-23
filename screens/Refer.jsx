@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import Login from './Logn';
+import Login from './Login';
 
 export default function Refer () {
   return (
