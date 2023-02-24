@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 import Navbar from '../components/Navbar';
 
 export default function Home () {
@@ -15,6 +15,24 @@ export default function Home () {
           coins
         </Text>
         <Text style={styles.compliments}>How are you feeling?</Text>
+      </View>
+      <View style={styles.imageWrapper}>
+        <Image
+          style={styles.image}
+          source={require ('../assets/darkGreen.jpg')}
+        />
+        <View style={styles.imageContent}>
+          <Text style={styles.imageHeader}>Smart</Text>
+          <Text style={styles.imageHeader__two}>Deposit Coins</Text>
+        </View>
+
+      </View>
+      <View style={styles.imageWrapper}>
+        <Image style={styles.image} source={require ('../assets/yellow.jpg')} />
+        <View style={styles.imageContent}>
+          <Text style={styles.imageHeader}>Lucky</Text>
+          <Text style={styles.imageHeader__two}>Withdraw Coins</Text>
+        </View>
       </View>
     </View>
   );
@@ -47,6 +65,35 @@ const styles = StyleSheet.create ({
     fontSize: 50,
     fontWeight: 'bolder',
     paddingTop: 20,
-    paddingBottom: 20,
+    paddingBottom: 10,
+  },
+  imageWrapper: {
+    position: 'relative',
+    marginBottom: 20,
+  },
+  image: {
+    height: 180,
+    width: 360,
+    borderRadius: 15,
+  },
+  imageHeader: {
+    color: '#fff',
+    fontSize: 28,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+  },
+  imageHeader__two: {
+    color: '#fff',
+    fontSize: 18,
+    textAlign: 'center',
+  },
+  imageContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    right: 50,
+    top: 10,
   },
 });
