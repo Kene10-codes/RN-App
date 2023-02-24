@@ -10,6 +10,7 @@ import {
   TextInput,
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
+import {Formik} from 'formik';
 
 export default function Login () {
   const [text, onChangeText] = useState ('Adams234');
@@ -34,20 +35,32 @@ export default function Login () {
             </Text>
           </View>
         </View>
-        <View style={styles.buttonWrapper}>
-          <TextInput
-            style={styles.input}
-            onChangeText={onChangeText}
-            value={text}
-          />
-          <TouchableOpacity style={styles.button}>
-            <Text
-              style={styles.buttonText}
-              onPress={() => Alert.alert ('Hi 👋, you are welcome')}
-            >
-              Enter
-            </Text>
-          </TouchableOpacity>
+        <View>
+          <Formik
+            initialValues={{username: 'Adams234'}}
+            onSubmit={values => Alert.alert (JSON.stringify (values.username))}
+          >
+            {({handleChange, handleBlur, handleSubmit, values}) => (
+              <View style={styles.buttonWrapper}>
+                <TextInput
+                  onChangeText={handleChange ('username')}
+                  onBlur={handleBlur ('username')}
+                  value={values.username}
+                  style={styles.input}
+                />
+                {/* <Button onPress={handleSubmit} title="Submit" /> */}
+                <TouchableOpacity style={styles.button}>
+                  <Text
+                    style={styles.buttonText}
+                    onPress={handleSubmit}
+                    title="Submit"
+                  >
+                    Enter
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            )}
+          </Formik>
         </View>
       </View>
     </SafeAreaView>
@@ -89,15 +102,18 @@ const styles = StyleSheet.create ({
   input: {
     height: 50,
     borderWidth: 1,
+    borderWidth: 1,
     padding: 10,
     borderColor: '#fff',
-    color: '#fff',
+    color: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 12,
     borderRadius: 10,
-    width: 350,
     marginBottom: 10,
+    fontSize: 18,
+    width: 360,
   },
+
   buttonWrapper: {
     marginTop: 50,
   },
@@ -109,7 +125,7 @@ const styles = StyleSheet.create ({
     borderWidth: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    width: 350,
+    width: 360,
     backgroundColor: 'green',
     marginTop: 10,
     height: 50,
