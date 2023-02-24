@@ -11,7 +11,7 @@ import {
 import {Feather} from '@expo/vector-icons';
 import {Formik} from 'formik';
 
-export default function Login () {
+export default function LoginPhone () {
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -24,27 +24,27 @@ export default function Login () {
               color="#fff"
               style={styles.icon}
             />
-            <Text style={styles.title}>Sweet!</Text>
-            <Text style={styles.subTitle}>
-              A friend of #234453 is a friend of ours.
+            <Text style={styles.title}>
+              Nice One, Adams234
             </Text>
             <Text style={styles.subTitle}>
-              What do you want us to call you?
+              What is your phone number?
             </Text>
           </View>
         </View>
         <View>
           <Formik
-            initialValues={{username: 'Adams234'}}
-            onSubmit={values => Alert.alert (JSON.stringify (values.username))}
+            initialValues={{phone: '08168902345'}}
+            onSubmit={values => Alert.alert (JSON.stringify (values.phone))}
           >
             {({handleChange, handleBlur, handleSubmit, values}) => (
               <View style={styles.buttonWrapper}>
                 <TextInput
-                  onChangeText={handleChange ('username')}
-                  onBlur={handleBlur ('username')}
-                  value={values.username}
+                  onChangeText={handleChange ('phone')}
+                  onBlur={handleBlur ('phone')}
+                  value={values.phone}
                   style={styles.input}
+                  keyboardType="numeric"
                 />
                 {/* <Button onPress={handleSubmit} title="Submit" /> */}
                 <TouchableOpacity style={styles.button}>
@@ -53,7 +53,7 @@ export default function Login () {
                     onPress={handleSubmit}
                     title="Submit"
                   >
-                    Enter
+                    Send OTP
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -104,7 +104,7 @@ const styles = StyleSheet.create ({
     borderWidth: 1,
     padding: 10,
     borderColor: '#fff',
-    color: 'orange',
+    color: '#fff',
     paddingVertical: 10,
     paddingHorizontal: 12,
     borderRadius: 10,
