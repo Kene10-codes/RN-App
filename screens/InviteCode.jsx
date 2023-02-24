@@ -14,11 +14,11 @@ import {Formik} from 'formik';
 
 const initialValues = {
   code1: '5',
-  code2: '',
-  code3: '',
-  code4: '',
-  code5: '',
-  code6: '',
+  code2: '-',
+  code3: '-',
+  code4: '-',
+  code5: '-',
+  code6: '-',
 };
 
 export default function InviteCode () {
@@ -50,7 +50,7 @@ export default function InviteCode () {
                     onChangeText={handleChange ('code1')}
                     onBlur={handleBlur ('code1')}
                     value={values.code1}
-                    style={styles.input}
+                    style={styles.input__orange}
                     keyboardType="numeric"
                   />
                   <TextInput
@@ -148,13 +148,27 @@ const styles = StyleSheet.create ({
     justifyContent: 'space-between',
     marginBottom: 10,
   },
-  input: {
+  input__orange: {
     height: 75,
     width: 54,
     borderWidth: 1,
     padding: 10,
     borderColor: '#fff',
     color: 'orange',
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 10,
+    marginBottom: 10,
+    textAlign: 'center',
+    fontSize: 18,
+  },
+  input: {
+    height: 75,
+    width: 54,
+    borderWidth: 1,
+    padding: 10,
+    borderColor: '#fff',
+    color: '#fff',
     paddingVertical: 10,
     paddingHorizontal: 12,
     borderRadius: 10,
