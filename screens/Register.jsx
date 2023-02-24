@@ -6,9 +6,12 @@ import {
   Button,
   TouchableOpacity,
   Alert,
+  onPress,
 } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 export default function Register () {
+  const navigation = useNavigation ();
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -27,10 +30,11 @@ export default function Register () {
             Sign Up with Account Code
           </Text>
         </TouchableOpacity>
+
         <TouchableOpacity style={styles.buttonTwo}>
           <Text
             style={styles.buttonText__two}
-            onPress={() => Alert.alert ('Hi 👋, you are about to login')}
+            onPress={() => navigation.navigate ('Login')}
           >
             I already have an account
           </Text>
