@@ -6,6 +6,6 @@ export default function Nav () {
   return (
     <Navigator>
       <Home />
-    </Navigator>
+    </Navigator> 
   );
 }

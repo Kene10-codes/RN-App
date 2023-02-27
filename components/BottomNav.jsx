@@ -21,7 +21,7 @@ const TabNavigator = createMaterialBottomTabNavigator (
           <AntDesign
             name="home"
             size={tabInfo.focused ? 26 : 20}
-            color="#fff"
+            color="#FDFDFD"
           />
         ),
       },
@@ -47,7 +47,7 @@ const TabNavigator = createMaterialBottomTabNavigator (
           <Feather
             name="shopping-bag"
             size={tabInfo.focused ? 26 : 20}
-            color="#fff"
+            color="#FDFDFD"
           />
         ),
       },
@@ -73,7 +73,7 @@ const TabNavigator = createMaterialBottomTabNavigator (
           <FontAwesome
             name="user"
             size={tabInfo.focused ? 26 : 20}
-            color="#fff"
+            color="#FDFDFD"
           />
         ),
       },

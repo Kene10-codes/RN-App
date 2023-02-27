@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
 import {Formik} from 'formik';
+import {useNavigation} from '@react-navigation/native';
 
 const initialValues = {
   code1: '5',
@@ -22,6 +23,7 @@ const initialValues = {
 };
 
 export default function VerifyOTP () {
+  const navigation = useNavigation ();
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -30,7 +32,7 @@ export default function VerifyOTP () {
           <Feather
             name="arrow-left-circle"
             size={24}
-            color="#fff"
+            color="#FDFDFD"
             style={styles.icon}
           />
           <Text style={styles.title}>Verify OTP</Text>
@@ -41,7 +43,7 @@ export default function VerifyOTP () {
         <View>
           <Formik
             initialValues={initialValues}
-            onSubmit={values => Alert.alert (JSON.stringify (values))}
+            onSubmit={() => navigation.navigate ('InviteCode')}
           >
             {({handleChange, handleBlur, handleSubmit, values}) => (
               <View>
@@ -112,7 +114,7 @@ const styles = StyleSheet.create ({
   container: {
     display: 'flex',
     justifyContent: 'space-between',
-    backgroundColor: '#000',
+    backgroundColor: '#030303',
     height: 750,
     paddingBottom: 200,
   },
@@ -131,12 +133,12 @@ const styles = StyleSheet.create ({
     marginBottom: 15,
   },
   title: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 26,
     fontWeight: 'bolder',
   },
   subTitle: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 18,
     textAlign: 'left',
     paddingTop: 5,
@@ -154,11 +156,11 @@ const styles = StyleSheet.create ({
     width: 54,
     borderWidth: 1,
     padding: 10,
-    borderColor: '#fff',
+    borderColor: '#FDFDFD',
     color: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 12,
-    borderRadius: 10,
+    borderRadius: 5,
     marginBottom: 10,
     textAlign: 'center',
     fontSize: 18,
@@ -168,32 +170,32 @@ const styles = StyleSheet.create ({
     width: 54,
     borderWidth: 1,
     padding: 10,
-    borderColor: '#fff',
-    color: '#fff',
+    borderColor: '#FDFDFD',
+    color: '#FDFDFD',
     paddingVertical: 10,
     paddingHorizontal: 12,
-    borderRadius: 10,
+    borderRadius: 5,
     marginBottom: 10,
     textAlign: 'center',
     fontSize: 18,
   },
   button: {
-    color: '#fff',
+    color: '#FDFDFD',
     elevation: 8,
-    borderRadius: 10,
-    borderColor: '#fff',
+    borderRadius: 5,
+    borderColor: '#FDFDFD',
     borderWidth: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
     width: 360,
-    backgroundColor: 'green',
+    backgroundColor: '#116D44',
     marginTop: 10,
     height: 50,
     marginLeft: 'auto',
     marginRight: 'auto',
   },
   buttonText: {
-    color: '#fff',
+    color: '#FDFDFD',
     textAlign: 'center',
     fontWeight: 'bolder',
     fontSize: 18,

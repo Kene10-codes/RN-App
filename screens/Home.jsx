@@ -44,24 +44,24 @@ const styles = StyleSheet.create ({
     paddingBottom: 15,
   },
   home: {
-    backgroundColor: '#000',
+    backgroundColor: '#030303',
     height: 900,
   },
   name: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 18,
     paddingBottom: 5,
   },
   balance: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 18,
   },
   balanceValue: {
-    color: 'green',
+    color: '#116D44',
     fontSize: 18,
   },
   compliments: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 50,
     fontWeight: 'bolder',
     paddingTop: 20,
@@ -74,16 +74,16 @@ const styles = StyleSheet.create ({
   image: {
     height: 180,
     width: 360,
-    borderRadius: 15,
+    borderRadius: 5,
   },
   imageHeader: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 28,
     fontWeight: 'bold',
     textTransform: 'uppercase',
   },
   imageHeader__two: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 18,
     textAlign: 'center',
   },

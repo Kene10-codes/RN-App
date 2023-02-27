@@ -45,6 +45,6 @@ const styles = StyleSheet.create ({
     height: 1000,
   },
   text: {
-    color: '#fff',
+    color: '#FDFDFD',
   },
 });

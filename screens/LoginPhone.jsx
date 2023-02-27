@@ -4,14 +4,15 @@ import {
   StyleSheet,
   Image,
   TouchableOpacity,
-  Alert,
   SafeAreaView,
   TextInput,
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
 import {Formik} from 'formik';
+import {useNavigation} from '@react-navigation/native';
 
 export default function LoginPhone () {
+  const navigation = useNavigation ();
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -35,7 +36,7 @@ export default function LoginPhone () {
         <View>
           <Formik
             initialValues={{phone: '08168902345'}}
-            onSubmit={values => Alert.alert (JSON.stringify (values.phone))}
+            onSubmit={() => navigation.navigate ('VerifyOTP')}
           >
             {({handleChange, handleBlur, handleSubmit, values}) => (
               <View style={styles.buttonWrapper}>
@@ -107,7 +108,7 @@ const styles = StyleSheet.create ({
     color: '#fff',
     paddingVertical: 10,
     paddingHorizontal: 12,
-    borderRadius: 10,
+    borderRadius: 5,
     marginBottom: 10,
     fontSize: 18,
     width: 360,
@@ -119,13 +120,13 @@ const styles = StyleSheet.create ({
   button: {
     color: '#fff',
     elevation: 8,
-    borderRadius: 10,
+    borderRadius: 5,
     borderColor: '#fff',
     borderWidth: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
     width: 360,
-    backgroundColor: 'green',
+    backgroundColor: '#116D44',
     marginTop: 10,
     height: 50,
   },

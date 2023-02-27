@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
 import {Formik} from 'formik';
+import {useNavigation} from '@react-navigation/native';
 
 const initialValues = {
   code1: '5',
@@ -22,6 +23,7 @@ const initialValues = {
 };
 
 export default function InviteCode () {
+  const navigation = useNavigation ();
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -41,7 +43,7 @@ export default function InviteCode () {
         <View>
           <Formik
             initialValues={initialValues}
-            onSubmit={values => Alert.alert (JSON.stringify (values))}
+            onSubmit={() => navigation.navigate ('Login')}
           >
             {({handleChange, handleBlur, handleSubmit, values}) => (
               <View>
@@ -157,7 +159,7 @@ const styles = StyleSheet.create ({
     color: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 12,
-    borderRadius: 10,
+    borderRadius: 5,
     marginBottom: 10,
     textAlign: 'center',
     fontSize: 18,
@@ -171,7 +173,7 @@ const styles = StyleSheet.create ({
     color: '#fff',
     paddingVertical: 10,
     paddingHorizontal: 12,
-    borderRadius: 10,
+    borderRadius: 5,
     marginBottom: 10,
     textAlign: 'center',
     fontSize: 18,
@@ -179,13 +181,13 @@ const styles = StyleSheet.create ({
   button: {
     color: '#fff',
     elevation: 8,
-    borderRadius: 10,
+    borderRadius: 5,
     borderColor: '#fff',
     borderWidth: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
     width: 360,
-    backgroundColor: 'green',
+    backgroundColor: '#116D44',
     marginTop: 10,
     height: 50,
     marginLeft: 'auto',

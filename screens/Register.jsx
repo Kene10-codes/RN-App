@@ -25,7 +25,7 @@ export default function Register () {
         <TouchableOpacity style={styles.button}>
           <Text
             style={styles.buttonText}
-            onPress={() => Alert.alert ('Hi 👋, you are about to sign up.')}
+            onPress={() => navigation.navigate ('LoginPhone')}
           >
             Sign Up with Account Code
           </Text>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create ({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#000',
+    backgroundColor: '#030303',
     height: 750,
     paddingBottom: 200,
   },
@@ -65,12 +65,12 @@ const styles = StyleSheet.create ({
     height: 150,
   },
   title: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 32,
     fontWeight: 'bolder',
   },
   subTitle: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 17,
     textAlign: 'center',
     paddingTop: 5,
@@ -80,37 +80,39 @@ const styles = StyleSheet.create ({
     marginTop: 50,
   },
   button: {
-    color: '#fff',
+    color: '#FDFDFD',
+    height: 45,
     elevation: 8,
-    borderRadius: 10,
-    borderColor: '#fff',
-    borderWidth: 1,
+    borderRadius: 5,
+    borderColor: '#FDFDFD',
+    borderWidth: 0.5,
     paddingVertical: 10,
     paddingHorizontal: 12,
     width: 360,
-    backgroundColor: 'green',
+    backgroundColor: '#116D44',
     marginBottom: 10,
   },
   buttonTwo: {
-    color: '#fff',
+    color: '#FDFDFD',
     elevation: 8,
-    backgroundColor: '#000',
-    borderRadius: 10,
+    backgroundColor: '#030303',
+    borderRadius: 5,
     paddingVertical: 10,
     paddingHorizontal: 12,
     marginTop: 10,
+    height: 45,
     width: 360,
-    borderWidth: 1,
-    borderColor: '#fff',
+    borderWidth: 0.5,
+    borderColor: '#FDFDFD',
   },
   buttonText: {
-    color: '#fff',
+    color: '#FDFDFD',
     textAlign: 'center',
     fontWeight: 'bolder',
     fontSize: 18,
   },
   buttonText__two: {
-    color: '#fff',
+    color: '#FDFDFD',
     textAlign: 'center',
     fontWeight: 'bolder',
     fontSize: 18,

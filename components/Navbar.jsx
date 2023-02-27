@@ -19,10 +19,10 @@ const styles = StyleSheet.create ({
     height: 50,
   },
   text: {
-    color: '#000',
+    color: '#030303',
     fontSize: 25,
     borderRadius: 50,
-    backgroundColor: '#fff',
+    backgroundColor: '#FDFDFD',
     padding: 5,
     width: 50,
     height: 50,

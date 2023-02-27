@@ -21,7 +21,7 @@ export default function Login () {
             <Feather
               name="arrow-left-circle"
               size={24}
-              color="#fff"
+              color="#FDFDFD"
               style={styles.icon}
             />
             <Text style={styles.title}>Sweet!</Text>
@@ -69,7 +69,7 @@ const styles = StyleSheet.create ({
   container: {
     display: 'flex',
     justifyContent: 'space-between',
-    backgroundColor: '#000',
+    backgroundColor: '#030303',
     height: 750,
     paddingBottom: 200,
   },
@@ -85,12 +85,12 @@ const styles = StyleSheet.create ({
     marginBottom: 15,
   },
   title: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 26,
     fontWeight: 'bolder',
   },
   subTitle: {
-    color: '#fff',
+    color: '#FDFDFD',
     fontSize: 17,
     textAlign: 'left',
     paddingTop: 5,
@@ -103,11 +103,11 @@ const styles = StyleSheet.create ({
     borderWidth: 1,
     borderWidth: 1,
     padding: 10,
-    borderColor: '#fff',
+    borderColor: '#FDFDFD',
     color: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 12,
-    borderRadius: 10,
+    borderRadius: 5,
     marginBottom: 10,
     fontSize: 18,
     width: 360,
@@ -117,10 +117,10 @@ const styles = StyleSheet.create ({
     marginTop: 50,
   },
   button: {
-    color: '#fff',
+    color: '#FDFDFD',
     elevation: 8,
-    borderRadius: 10,
-    borderColor: '#fff',
+    borderRadius: 5,
+    borderColor: '#FDFDFD',
     borderWidth: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
@@ -130,7 +130,7 @@ const styles = StyleSheet.create ({
     height: 50,
   },
   buttonText: {
-    color: '#fff',
+    color: '#FDFDFD',
     textAlign: 'center',
     fontWeight: 'bolder',
     fontSize: 18,
