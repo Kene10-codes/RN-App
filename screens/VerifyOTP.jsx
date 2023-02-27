@@ -34,6 +34,7 @@ export default function VerifyOTP () {
             size={24}
             color="#FDFDFD"
             style={styles.icon}
+            onPress={() => navigation.navigate ('LoginPhone')}
           />
           <Text style={styles.title}>Verify OTP</Text>
           <Text style={styles.subTitle}>
@@ -130,7 +131,7 @@ const styles = StyleSheet.create ({
     paddingBottom: 55,
   },
   icon: {
-    marginBottom: 15,
+    marginBottom: 25,
   },
   title: {
     color: '#FDFDFD',

@@ -24,6 +24,7 @@ export default function LoginPhone () {
               size={24}
               color="#fff"
               style={styles.icon}
+              onPress={() => navigation.navigate ('Register')}
             />
             <Text style={styles.title}>
               Nice One, Adams234
@@ -83,7 +84,7 @@ const styles = StyleSheet.create ({
     marginRight: 'auto',
   },
   icon: {
-    marginBottom: 15,
+    marginBottom: 25,
   },
   title: {
     color: '#fff',

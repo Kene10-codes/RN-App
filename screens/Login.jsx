@@ -9,9 +9,11 @@ import {
   TextInput,
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
+import {useNavigation} from '@react-navigation/native';
 import {Formik} from 'formik';
 
 export default function Login () {
+  const navigation = useNavigation ();
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -23,6 +25,7 @@ export default function Login () {
               size={24}
               color="#FDFDFD"
               style={styles.icon}
+              onPress={() => navigation.navigate ('InviteCode')}
             />
             <Text style={styles.title}>Sweet!</Text>
             <Text style={styles.subTitle}>
@@ -36,7 +39,7 @@ export default function Login () {
         <View>
           <Formik
             initialValues={{username: 'Adams234'}}
-            onSubmit={values => Alert.alert (JSON.stringify (values.username))}
+            onSubmit={values => navigation.navigate ('Welcome')}
           >
             {({handleChange, handleBlur, handleSubmit, values}) => (
               <View style={styles.buttonWrapper}>
@@ -82,7 +85,7 @@ const styles = StyleSheet.create ({
     marginRight: 'auto',
   },
   icon: {
-    marginBottom: 15,
+    marginBottom: 25,
   },
   title: {
     color: '#FDFDFD',

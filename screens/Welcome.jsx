@@ -9,9 +9,11 @@ import {
   TextInput,
 } from 'react-native';
 import {Feather} from '@expo/vector-icons';
+import {useNavigation} from '@react-navigation/native';
 import {Formik} from 'formik';
 
 export default function Welcome () {
+  const navigation = useNavigation ();
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -23,6 +25,7 @@ export default function Welcome () {
               size={24}
               color="#FDFDFD"
               style={styles.icon}
+              onPress={() => NavigationPreloadManager.navigate ('Register')}
             />
             <Text style={styles.title}>
               Welcome back, Adams234
@@ -79,7 +82,7 @@ const styles = StyleSheet.create ({
     marginRight: 'auto',
   },
   icon: {
-    marginBottom: 15,
+    marginBottom: 25,
   },
   title: {
     color: '#FDFDFD',

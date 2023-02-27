@@ -34,6 +34,7 @@ export default function InviteCode () {
             size={24}
             color="#fff"
             style={styles.icon}
+            onPress={() => navigation.navigate ('Login')}
           />
           <Text style={styles.title}>Hey there,</Text>
           <Text style={styles.subTitle}>
@@ -130,7 +131,7 @@ const styles = StyleSheet.create ({
     paddingBottom: 55,
   },
   icon: {
-    marginBottom: 15,
+    marginBottom: 25,
   },
   title: {
     color: '#fff',
