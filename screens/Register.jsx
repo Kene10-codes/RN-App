@@ -15,7 +15,7 @@ export default function Register () {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Image style={styles.logo} source={require ('../assets/logo.jpg')} />
+        <Image style={styles.logo} source={require ('../assets/logo.png')} />
         <View>
           <Text style={styles.title}>SmartBanc</Text>
           <Text style={styles.subTitle}>Just dey play</Text>
