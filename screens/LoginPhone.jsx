@@ -112,7 +112,7 @@ const styles = StyleSheet.create ({
     borderRadius: 5,
     marginBottom: 10,
     fontSize: 18,
-    width: 360,
+    width: 335,
   },
 
   buttonWrapper: {
@@ -126,7 +126,6 @@ const styles = StyleSheet.create ({
     borderWidth: 1,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    width: 360,
     backgroundColor: '#116D44',
     marginTop: 10,
     height: 50,

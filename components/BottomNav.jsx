@@ -1,5 +1,5 @@
 import React from 'react';
-import {AntDesign, Feather, FontAwesome} from '@expo/vector-icons';
+import {Feather, FontAwesome, MaterialIcons} from '@expo/vector-icons';
 import {createAppContainer} from 'react-navigation';
 import {
   createMaterialBottomTabNavigator,
@@ -18,7 +18,7 @@ const TabNavigator = createMaterialBottomTabNavigator (
       navigationOptions: {
         tabBarLabel: 'Home',
         tabBarIcon: tabInfo => (
-          <AntDesign
+          <MaterialIcons
             name="home"
             size={tabInfo.focused ? 26 : 20}
             color="#FDFDFD"
@@ -31,8 +31,8 @@ const TabNavigator = createMaterialBottomTabNavigator (
       navigationOptions: {
         tabBarLabel: 'Refer Friends',
         tabBarIcon: tabInfo => (
-          <AntDesign
-            name="user"
+          <MaterialIcons
+            name="people"
             size={tabInfo.focused ? 26 : 20}
             color="#fff"
           />
@@ -44,8 +44,8 @@ const TabNavigator = createMaterialBottomTabNavigator (
       navigationOptions: {
         tabBarLabel: 'Shop',
         tabBarIcon: tabInfo => (
-          <Feather
-            name="shopping-bag"
+          <MaterialIcons
+            name="add-shopping-cart"
             size={tabInfo.focused ? 26 : 20}
             color="#FDFDFD"
           />

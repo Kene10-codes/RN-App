@@ -77,6 +77,9 @@ const styles = StyleSheet.create ({
     fontWeight: '100',
   },
   buttonWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: 50,
   },
   button: {
@@ -88,7 +91,7 @@ const styles = StyleSheet.create ({
     borderWidth: 0.5,
     paddingVertical: 10,
     paddingHorizontal: 12,
-    width: 360,
+    width: 330,
     backgroundColor: '#116D44',
     marginBottom: 10,
   },
@@ -101,7 +104,7 @@ const styles = StyleSheet.create ({
     paddingHorizontal: 12,
     marginTop: 10,
     height: 45,
-    width: 360,
+    width: 330,
     borderWidth: 0.5,
     borderColor: '#FDFDFD',
   },
