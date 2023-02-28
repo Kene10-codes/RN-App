@@ -36,18 +36,19 @@ export default function Home () {
 }
 
 const styles = StyleSheet.create ({
+  home: {
+    backgroundColor: '#030303',
+    height: 900,
+    paddingTop: 25,
+  },
   wrapper: {
     paddingTop: 15,
     paddingBottom: 15,
   },
-  home: {
-    backgroundColor: '#030303',
-    height: 900,
-  },
   name: {
     color: '#FDFDFD',
     fontSize: 18,
-    paddingBottom: 5,
+    paddingBottom: 3,
   },
   balance: {
     color: '#FDFDFD',
@@ -61,12 +62,12 @@ const styles = StyleSheet.create ({
     color: '#FDFDFD',
     fontSize: 50,
     fontWeight: 'bolder',
-    paddingTop: 20,
-    paddingBottom: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
   },
   imageWrapper: {
     position: 'relative',
-    marginBottom: 20,
+    marginBottom: 15,
   },
   image: {
     height: 180,
