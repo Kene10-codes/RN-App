@@ -17,10 +17,7 @@ export default function Home () {
         <Text style={styles.compliments}>How are you feeling?</Text>
       </View>
       <View style={styles.imageWrapper}>
-        <Image
-          style={styles.image}
-          source={require ('../assets/darkGreen.jpg')}
-        />
+        <Image style={styles.image} source={require ('../assets/Smart2.png')} />
         <View style={styles.imageContent}>
           <Text style={styles.imageHeader}>Smart</Text>
           <Text style={styles.imageHeader__two}>Deposit Coins</Text>
@@ -28,7 +25,7 @@ export default function Home () {
 
       </View>
       <View style={styles.imageWrapper}>
-        <Image style={styles.image} source={require ('../assets/yellow.jpg')} />
+        <Image style={styles.image} source={require ('../assets/Smart.png')} />
         <View style={styles.imageContent}>
           <Text style={styles.imageHeader}>Lucky</Text>
           <Text style={styles.imageHeader__two}>Withdraw Coins</Text>
@@ -93,7 +90,7 @@ const styles = StyleSheet.create ({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    right: 50,
-    top: 10,
+    right: 15,
+    top: 20,
   },
 });
