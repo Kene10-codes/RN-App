@@ -42,7 +42,7 @@ const styles = StyleSheet.create ({
     paddingTop: 25,
   },
   wrapper: {
-    paddingTop: 15,
+    paddingTop: 10,
     paddingBottom: 15,
   },
   name: {
