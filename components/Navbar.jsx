@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 export default function Navbar({logoText}) {
   return (
     <View style={styles.navContainer}>
-      <Image style={styles.logo} source={require ('../assets/logo.j')} />
+      <Image style={styles.logo} source={require ('../assets/logo.png')} />
       <Text style={styles.text}>{logoText}</Text>
     </View>
   );
