@@ -17,7 +17,7 @@ export default function Welcome () {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Image style={styles.logo} source={require ('../assets/logo.jpg')} />
+        <Image style={styles.logo} source={require ('../assets/logo.png')} />
         <View>
           <View>
             <Feather

@@ -27,7 +27,7 @@ export default function InviteCode () {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Image style={styles.logo} source={require ('../assets/logo.jpg')} />
+        <Image style={styles.logo} source={require ('../assets/logo.png')} />
         <View style={styles.content}>
           <Feather
             name="arrow-left-circle"
