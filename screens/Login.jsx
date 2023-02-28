@@ -17,7 +17,7 @@ export default function Login () {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Image style={styles.logo} source={require ('../assets/logo.j')} />
+        <Image style={styles.logo} source={require ('../assets/logo.png')} />
         <View>
           <View>
             <Feather
